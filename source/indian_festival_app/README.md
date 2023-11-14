@@ -15,9 +15,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Project module
+## Project module and components
+  - Module: App-Module
+  - Main Components: Header, Festivals, Custom festival, Festival details, Sesonal, Regional, Festival in Month etc.
 
-
-# Used Angular concept
+## Angular CLI
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
