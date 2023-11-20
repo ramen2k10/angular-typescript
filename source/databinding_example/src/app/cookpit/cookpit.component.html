@@ -2,10 +2,19 @@
     <div class="col-xs-12">
       <h2>Add new Servers or blueprints!</h2>
       <label>Server Name</label>
+      <!--Example of using local reference in template-->
+      <!--<input type="text" 
+             class="form-control" 
+             #serverNameReference>-->
       <input type="text" class="form-control" [(ngModel)]="newServerName">
       <label>Server Content</label>
+      <!--<input type="text" 
+      class="form-control" 
+      #serverContentsReference>-->
       <input type="text" class="form-control" [(ngModel)]="newServerContent">
       <br>
+      <!-- Using local reference in template : 
+        <button class="btn btn-primary" (click)="onAddServer(serverNameReference)">Add Server</button>-->
       <button
         class="btn btn-primary"
         (click)="onAddServer()">Add Server</button>

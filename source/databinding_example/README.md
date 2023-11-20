@@ -25,3 +25,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 -> The app-module component will loop over the entire server list and deliver details to the server-element component. `@Input() used to pass the info from parent component to child component`
 -> app-cookpit component contains two event. when any event will be occour it will emit the event data to the app-module component using @Output.
 ->  `@Output() used to pass the info from child component to parent component`
+
+## Angular local reference in template
+Local reference - In angular if you want to refer any element reference to other element in the HTML template then we can use the concept the local reference concept. The use this reference value inside the type script file we can simply use `HTMLInputElement` object. 
+`#ReferenceName` is used to define any reference in the template
+`example --> <input type="text" class="form-control" #serverNameReference>`

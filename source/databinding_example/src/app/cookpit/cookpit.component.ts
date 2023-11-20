@@ -15,6 +15,11 @@ export class CookpitComponent {
     this.newServerInfo.emit({serverName: this.newServerName, content: this.newServerContent});
   }
 
+  // Using Local reference template 
+  // onAddServer(inputData: HTMLInputElement) {
+  //   this.newServerInfo.emit({serverName: inputData.value, content: this.newServerContent});
+  // }
+
   onAddBlueprint() {
     this.newBlueprintServerInfo.emit({serverName: this.newServerName, content: this.newServerContent});
   }
