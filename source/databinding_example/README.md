@@ -34,3 +34,17 @@ Local reference - In angular if you want to refer any element reference to other
 ## @ViewChild('elementRef) : 
 `@ViewChild` is a decorator in Angular, it is used to access and interact with a child component or directive from a parent component. 
 Example: `server-type component` class contains info about the server types. To use it in app module component we can create a ElementRef in the app-module HTML template. @ViewChild('elementRef') through this we can access the types. `@ViewChild('serverTypes') serverTypeElements: ServerTypeComponent;`
+
+## <ng-content> :
+In Angular, the <ng-content> directive is used to project content into a component. It's part of Angular's content projection mechanism, allowing you to create reusable components that can accept and display content provided by the parent component
+[Example]
+<!-- child.component.html -->
+<div>
+  <h2>Child Component</h2>
+  <ng-content></ng-content>
+</div>
+
+<!-- parent.component.html -->
+<app-child>
+  <p>This content is projected into the child component.</p>
+</app-child>
