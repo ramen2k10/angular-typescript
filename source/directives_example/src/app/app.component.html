@@ -15,7 +15,7 @@
               {{ even }}
           </li>
         </div>
-        <div *ngIf="onlyOdd">
+        <!-- <div *ngIf="onlyOdd">
             <li
               class="list-group-item"
                 [ngClass]="{odd: odd % 2 !== 0}"
@@ -23,8 +23,21 @@
                 *ngFor="let odd of oddNumbers">
                 {{ odd }}
               </li>
-            </div>
+         </div> -->
+
+         <div *appCustomHighlight="onlyOdd">
+          <li
+            class="list-group-item"
+              [ngClass]="{odd: odd % 2 !== 0}"
+              [ngStyle]="{backgroundColor: odd % 2 !== 0? 'yellow':'transparent'}"
+              *ngFor="let odd of oddNumbers">
+              {{ odd }}
+            </li>
+       </div>
       </ul>
+      <p appBasicHighlight>This is the custom irective</p>
+      <p appBetterHighlight [defaultColor]="'yellow'" [newColor]="'brown'">This is the better custom directive</p>
     </div>
+  
   </div>
 </div>
