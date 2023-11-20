@@ -6,12 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CookpitComponent } from './cookpit/cookpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { ServerTypeComponent } from './server-type/server-type.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CookpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    ServerTypeComponent
   ],
   imports: [
     BrowserModule,

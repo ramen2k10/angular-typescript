@@ -30,3 +30,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Local reference - In angular if you want to refer any element reference to other element in the HTML template then we can use the concept the local reference concept. The use this reference value inside the type script file we can simply use `HTMLInputElement` object. 
 `#ReferenceName` is used to define any reference in the template
 `example --> <input type="text" class="form-control" #serverNameReference>`
+
+## @ViewChild('elementRef) : 
+`@ViewChild` is a decorator in Angular, it is used to access and interact with a child component or directive from a parent component. 
+Example: `server-type component` class contains info about the server types. To use it in app module component we can create a ElementRef in the app-module HTML template. @ViewChild('elementRef') through this we can access the types. `@ViewChild('serverTypes') serverTypeElements: ServerTypeComponent;`
