@@ -38,9 +38,9 @@ Example: `server-type component` class contains info about the server types. To 
 ## ng-content :
 In Angular, the <ng-content> directive is used to project content into a component. It's part of Angular's content projection mechanism, allowing you to create reusable components that can accept and display content provided by the parent component
 Example
-<!-- child.component.html -->
-<div>
-  <h2>Child Component</h2>
+child.component.html
+##(<div>)
+ ## <h2>Child Component</h2>
   <ng-content></ng-content>
 </div>
 
