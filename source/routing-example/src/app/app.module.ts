@@ -14,10 +14,11 @@ import { Route, RouterModule } from '@angular/router';
 
 const appRoutes: Route[] = [
   {path: '', component: HomeComponent},
-  {path: 'users', component: UserComponent},
+  {path: 'users', component: UsersComponent},
   //Fatch the user param from URL
   {path: 'users/:id/:name', component: UserComponent},
   {path: 'servers', component: ServersComponent},
+  {path: 'servers/:id/edit', component: EditServerComponent},
 ]
 
 @NgModule({
