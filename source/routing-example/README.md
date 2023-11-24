@@ -31,6 +31,13 @@ Router guards allow you to run code before or after navigating to a route. For e
 Routes define the mapping between URLs and components. Each route specifies a component to display when the URL matches a certain pattern. To do so we need to define the routes in our components let say app-module. Once we have defined the routes for out application then it is required to registered the routes.
 ### Example:
 In app-module component we have defined the array `appRoutes` which contains the routes for our application. An it is registered with `RouterModule.forRoot(appRoutes)` specific code added in import.
+<pre>
+```javascript
+function example() {
+  console.log("Hello, World!");
+}
+```
+</pre>
 
 ## What is Router link
 
