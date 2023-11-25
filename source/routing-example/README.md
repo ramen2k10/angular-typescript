@@ -177,3 +177,5 @@ export class HomeComponent implements OnInit {
 }
 In this example we are trying to get a server details by sending the id as query parameter and a dummy fragment details.
 ```
+## Wild card route
+** is used for wild card route

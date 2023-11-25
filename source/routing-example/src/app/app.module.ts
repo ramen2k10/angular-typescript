@@ -11,14 +11,20 @@ import { ServersComponent } from './servers/servers.component';
 import { UsersComponent } from './users/users.component';
 import { ServersService } from './servers/server.service';
 import { Route, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Route[] = [
   {path: '', component: HomeComponent},
-  {path: 'users', component: UsersComponent},
+  {path: 'users', component: UsersComponent, children:[
+    {path: ':id/:name', component: UserComponent},
+  ]},
   //Fatch the user param from URL
-  {path: 'users/:id/:name', component: UserComponent},
-  {path: 'servers', component: ServersComponent},
-  {path: 'servers/:id/edit', component: EditServerComponent},
+  {path: 'servers', component: ServersComponent, children:[
+    {path: ':id', component: ServerComponent},
+    {path: ':id/edit', component: EditServerComponent},
+  ]},
+  {path: 'not-found', component: PageNotFoundComponent},
+  {path: '**', redirectTo: '/not-found'}
 ]
 
 @NgModule({
@@ -29,7 +35,8 @@ const appRoutes: Route[] = [
     UsersComponent,
     EditServerComponent,
     ServerComponent,
-    UserComponent
+    UserComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
