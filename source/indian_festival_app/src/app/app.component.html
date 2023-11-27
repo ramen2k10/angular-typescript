@@ -1,9 +1,0 @@
-<app-header (category)="navigateCategory($event)" #tempVariable></app-header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <app-festivals [categoryFestivals]="pageNavigate"></app-festivals>
-      <app-custom-festival *ngIf="pageNavigate === 'custom'"></app-custom-festival>
-    </div>
-  </div>
-</div>
